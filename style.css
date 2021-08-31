@@ -684,3 +684,20 @@ color: #fff;
     opacity: 1;
     animation: rotating 10s linear infinite;
 }
+
+
+
+
+/* ANIMATION-16*/
+
+.animation-16 {
+    margin-top: 100px;
+    padding: 0;
+    display: flex;
+}
+
+.animation-16 {
+    list-style-type: none;
+    font-size: 80px;
+    letter-spacing: 20px;
+}
