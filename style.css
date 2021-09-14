@@ -851,3 +851,59 @@ color: #fff;
     80% {background-color: darkgreen;}
     100% {background-color: #272727;}
 }
+
+
+
+
+
+/* ANIMATION-20*/
+
+.animation-20 {
+    margin-top: 120px;
+    display: flex;
+    border-top: 10px solid #fff;
+}
+
+.animation-20  span{
+    display: block;
+    width: 3px;
+    height: 300px;
+    background-color: #fff;
+    margin: 0 29px;
+    position: relative;
+    transform-origin: top;
+}
+
+.animation-20 span:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+.animation-20 span:first-child {
+    animation: left-arm 2s ease-in infinite;
+}
+
+.animation-20 span:last-child {
+    animation: right-arm 2s ease-in infinite;
+}
+
+@keyframes left-arm {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(60deg);}
+    50% { transform: rotate(0deg);}
+    100% { transform: rotate(0deg);}
+}
+
+@keyframes right-arm {
+    0% { transform: rotate(0deg);}
+    50% { transform: rotate(0deg);}
+    75% { transform: rotate(-60deg);}
+    100% { transform: rotate(0deg);}
+}
