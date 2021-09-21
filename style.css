@@ -1102,3 +1102,38 @@ li:nth-child(5) {
     left: 0;
   }
 }
+
+/* ANIMATION-23*/
+
+.animation-23 {
+  margin-top: 100px;
+  font-size: 40px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #fff;
+}
+
+.animation-23:before {
+  content: "loading...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #f6b93b;
+  overflow: hidden;
+  border-right: 4px solid #f6b93b;
+  animation: animate23 5s linear infinite;
+}
+
+@keyframes animate23 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
