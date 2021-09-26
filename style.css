@@ -1319,3 +1319,73 @@ li:nth-child(5) {
 .obj-1:nth-child(8) {
   animation-delay: 0.7s;
 }
+
+/* ANIMATION-28*/
+
+.animation-28 {
+  margin-top: 100px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.animation-28 .outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 5px solid #eb4d4b;
+  border-right: 5px solid #eb4d4b;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-radius: 50%;
+  animation: rotate28 1s linear infinite;
+}
+
+.animation-28 .middle {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  border-left: 5px solid #218c74;
+  border-right: 5px solid #218c74;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-radius: 50%;
+  animation: rotate28 1s linear infinite reverse;
+}
+
+.animation-28 .inner {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  right: 60px;
+  bottom: 60px;
+  border-left: 5px solid #ccae62;
+  border-right: 5px solid #ccae62;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-radius: 50%;
+  animation: rotate28 1s linear infinite;
+}
+
+.animation-28 .circle {
+  position: absolute;
+  top: 90px;
+  right: 90px;
+  left: 90px;
+  bottom: 90px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+@keyframes rotate28 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
