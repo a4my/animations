@@ -1896,3 +1896,51 @@ h2:nth-child(2) {
     );
   }
 }
+
+/* ANIMATION-36 */
+
+.animation-36 {
+  margin-top: 100px;
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background-color: #222;
+}
+
+.clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.clip1 {
+  background: url(/img/1.png);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 21% 0, 34% 100%, 0 100%);
+}
+
+.clip2 {
+  background: url(/img/2.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(14% 0, 81% 0, 61% 100%, 33% 100%);
+}
+
+.clip3 {
+  background: url(/img/3.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(81% 0, 100% 0, 100% 100%, 61% 100%);
+}
+
+.animation-36:hover .clip {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.animation-36 .clip:hover {
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
