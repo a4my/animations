@@ -1828,3 +1828,71 @@ li:nth-child(5) {
     transform: translateX(-100%);
   }
 }
+
+/* ANIMATION-35 */
+
+.animation-35 {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+h2 {
+  position: absolute;
+  text-align: center;
+  line-height: 500px;
+  font-size: 170px;
+  text-transform: uppercase;
+}
+
+h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+h2:nth-child(2) {
+  color: #03a9f4;
+  animation: wave35 2s ease-in-out infinite;
+}
+
+@keyframes wave35 {
+  0% {
+    clip-path: polygon(
+      0% 37%,
+      18% 42%,
+      36% 49%,
+      52% 54%,
+      76% 55%,
+      90% 45%,
+      100% 41%,
+      100% 100%,
+      0 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 53%,
+      16% 64%,
+      39% 62%,
+      54% 54%,
+      68% 44%,
+      82% 31%,
+      100% 22%,
+      100% 100%,
+      0 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      0% 37%,
+      18% 42%,
+      36% 49%,
+      52% 54%,
+      76% 55%,
+      90% 45%,
+      100% 41%,
+      100% 100%,
+      0 100%
+    );
+  }
+}
