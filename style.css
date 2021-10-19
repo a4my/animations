@@ -1837,7 +1837,7 @@ li:nth-child(5) {
   height: 500px;
 }
 
-h2 {
+.animation-35 h2 {
   position: absolute;
   text-align: center;
   line-height: 500px;
@@ -1845,12 +1845,12 @@ h2 {
   text-transform: uppercase;
 }
 
-h2:nth-child(1) {
+.animation-35 h2:nth-child(1) {
   color: transparent;
   -webkit-text-stroke: 2px #03a9f4;
 }
 
-h2:nth-child(2) {
+.animation-35 h2:nth-child(2) {
   color: #03a9f4;
   animation: wave35 2s ease-in-out infinite;
 }
@@ -2005,4 +2005,75 @@ h2:nth-child(2) {
 
 .animation-38 h1:nth-child(1):hover ~ h1 {
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+/* ANIMATION-39*/
+
+.animation-39 {
+  margin-top: 200px;
+  position: relative;
+  width: 335px;
+  height: 500px;
+}
+
+.img-39 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  clip-path: circle(70.7% at 50% 50%);
+}
+
+.animation-39 img {
+  width: 100%;
+}
+
+.animation-39:hover .img-39 {
+  clip-path: circle(16.8% at 49% 33%);
+}
+
+.animation-39 .content {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  text-align: center;
+}
+
+.animation-39 .content h2 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.animation-39 p {
+  margin-bottom: 25px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.animation-39 a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: black;
+  color: #fff;
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+
+.animation-39 h2,
+.animation-39 p,
+.animation-39 a {
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(20px);
+}
+
+.animation-39:hover h2,
+.animation-39:hover p,
+.animation-39:hover a {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
 }
